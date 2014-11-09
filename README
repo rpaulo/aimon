@@ -1,0 +1,29 @@
+aimon - acpi_aiboost(4) monitor for FreeBSD
+
+Welcome to aimon. aimon will produce nice graphics about your ASUS AI Boost
+monitored temperatures, voltages and fans.
+
+Requirements:
+-------------
+ * A computer running FreeBSD supported by acpi_aiboost(4).
+ * rrdtool (/usr/ports/databases/rrdtool).
+
+How to install
+--------------
+Edit aimon.sh to suit your needs.
+
+Use 'aimon.sh create' to create the rrdtool database. Then add this to
+your crontab:
+*/5	*	*	*	*	$HOME/projects/aimon/aimon.sh update
+
+*Make* *sure* the timer specifier in the crontab matches the one specified
+in aimon.sh (note that 5 minutes equals 300 seconds).
+
+After some time, your graphs should have some information in the public
+directory.
+
+Contacts
+--------
+Rui Paulo <rpaulo at fnop dot net>
+
+$Id: README,v e848685d091b 2010/03/22 17:18:53 rpaulo $
