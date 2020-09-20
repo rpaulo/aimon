@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (c) 2008 Rui Paulo <rpaulo@fnop.net>
+# Copyright (c) 2008 Rui Paulo <rpaulo@me.com>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
